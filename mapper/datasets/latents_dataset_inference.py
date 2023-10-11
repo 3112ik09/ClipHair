@@ -6,7 +6,12 @@ import random
 from PIL import Image
 import torchvision.transforms as transforms
 import sys
-sys.path.append('/home/ishant/Desktop/Computer Vision/textmodulation/mapper')
+import os
+
+
+mapper_directory = os.path.abspath('../mapper')
+
+sys.path.append(mapper_directory)
 from training import train_utils
 import os
 
