@@ -1,9 +1,9 @@
 import os
 from argparse import Namespace
-# import sys
-# sys.path.append(".")
-# sys.path.append("..")
-# import torchvision
+import sys
+sys.path.append(".")
+sys.path.append("..")
+import torchvision
 import numpy as np
 import torch
 from torch.utils.data import DataLoader
@@ -86,7 +86,7 @@ def run(test_opts):
 				else:
 					couple_output = torch.cat([result_batch[2][0].unsqueeze(0), result_batch[0][0].unsqueeze(0)])
 				print(couple_output)
-				# torchvision.utils.save_image(couple_output, os.path.join(out_path_results, f"{im_path}-{str(i).zfill(4)}-{selected_description}.jpg"), normalize=True, range=(-1, 1))
+				torchvision.utils.save_image(couple_output, os.path.join(out_path_results, f"{im_path}-{str(i).zfill(4)}-{selected_description}.jpg"), normalize=True, range=(-1, 1))
 			global_i += 1
 
 
