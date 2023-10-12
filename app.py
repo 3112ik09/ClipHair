@@ -41,9 +41,8 @@ with gr.Blocks(css='style.css') as demo:
         with gr.Row():
             with gr.Column():
                 with gr.Row():
-                    input_image = 'messi.png'
-                    #gr.Image(label='Input Image',
-                    #                        type='filepath')
+                    input_image = gr.Image(label='Input Image',
+                                           type='filepath')
                 with gr.Row():
                     preprocess_button = gr.Button('Preprocess')
             with gr.Column():
