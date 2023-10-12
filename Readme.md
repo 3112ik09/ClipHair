@@ -1,4 +1,5 @@
 # HairCLIP: Design Your Hair by Text and Reference Image
+* RESULTS: --->>>  https://drive.google.com/drive/folders/1QnxMoJUDvEuo-sY9EyzLMkKA4b5H9O2U?usp=sharing
 <pre>
 Implemented the hairclip inference.
 * https://github.com/wty-ustc/HairCLIP
@@ -29,3 +30,8 @@ Implemented the hairclip inference.
 1. Use u2net to find the segement the image/face . 
 2.  mount the face mask on top of the image. 
 </pre>
+
+<hr>
+
+### Gan 
+use gan to improve output image .
